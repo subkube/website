@@ -70,6 +70,7 @@
       </div>
     </nav>
 
+
     <!-- ######### -->
     <!-- Hero Unit -->
     <!-- ######### -->
@@ -98,100 +99,165 @@
       </div>
     </section>
 
-    <!-- ######## -->
-    <!-- Introduction -->
-    <!-- ######## -->
-    <section class="container" id="intro">
-      <div class="row my-5 py-5">
-        <div class="col-8 offset-2 text-center">
-          <p class="lead">
-            As someone working with code and applications, you might be interested in running one or two (or many) workloads in Kubernetes, but not enough to run an entire k8s cluster. <br/>
-            Or you don't have the time / resources / experience required to run one or more k8s clusters by yourself.
-          </p>
-          <p class="lead">
-            That's why we built SubKube. <br/>
-            Pay only for the resources you need, without the overhead of managing nodes and maintaining a control plane.
-          </p>
-          <p class="lead">
-            Subkube handles all this for you, so you can focus on what matters: <br/>
-            your applications.
-          </p>
-        </div>
-      </div>
-    </section>
-
 
     <!-- ######## -->
     <!-- Features -->
     <!-- ######## -->
     <section class="container" id="features">
-      <div class="row">
-        <div class="col text-center">
-          <h1 class="display-3">Features</h1>
+      <!-- ######## -->
+      <!-- Features/K8s -->
+      <!-- ######## -->
+      <div class="row align-items-center my-5 pt-5">
+        <div class="col col-md-6 text-left">
+          <h1 class="display-5 mx-5 mb-4">Real Managed Kubernetes</h1>
+          <p class="lead mx-5">
+            As someone working with code and applications, you might be interested in running one or two (or many) workloads in Kubernetes, but not enough to run an entire cluster, or you simply don't have the time / resources / experience required.
+          </p>
+          <p class="lead mx-5">
+            <strong>That's why we built Subkube.</strong>
+          </p>
+          <p class="lead mx-5">
+            Pay only for the resources you need, without the overhead of managing workers and maintaining a control plane.
+          </p>
+        </div>
+        <div class="col col-md-6 text-left">
+            <img src="/static/SubkubeArchSimplerBold.svg" style="width: 100%;"/>
         </div>
       </div>
-
-      <div class="row align-items-center my-5 py-5">
-        <div class="col text-center">
-            <img src="/static/project-diagram-solid.png" height="128"/>
-        </div>
-        <div class="col text-right">
-          <h1 class="display-5 mx-5">Project-based Workflow</h1>
+      <div class="row align-items-top my-5 pb-5">
+        <div class="col-md-4 col text-left">
+          <img src="/static/shield-alt-solid.png" height="64" class="my-5 mx-5"/>
+          <h3 class="display-5 mx-5">
+            Secure by Design
+          </h3>
           <p class="lead mx-5">
-            SubKube's <a href="http://docs.subku.be/concepts/project/" target="_blank">Projects</a> allow full developer freedom while keeping costs under control
+            Restricted as Standard
+          </p>
+          <p class="mx-5">
+            Due to the shared nature of Subkube, isolation is of the utmost importance. As such, all Subkube workloads have a proper security context set, so no need to worry about rogue containers.
+          </p>
+        </div>
+        <div class="col-md-4 col text-left">
+          <img src="/static/hdd-regular.png" height="64" class="my-5 mx-5"/>
+          <h3 class="display-5 mx-5">
+            Highly Flexible Storage
+          </h3>
+          <p class="lead mx-5">
+            Integrated with Longhorn
+          </p>
+          <p class="mx-5">
+            Define storage class properties using Longhorn annotations to specify the <strong>exact</strong> type of storage you need
+          </p>
+        </div>
+        <div class="col-md-4 col text-left">
+          <img src="/static/ethernet-solid.png" height="64" class="my-5 mx-5"/>
+          <h3 class="display-5 mx-5">
+             Full network flexibility
+          </h3>
+          <p class="lead mx-5">
+            Full control over Network Policies
+          </p>
+          <p class="mx-5">
+            By defining your own Network Security Policies, you can allow inter-namespace traffic, or deny inter-pod traffic, just as your needs require
           </p>
         </div>
       </div>
 
-      <div class="row align-items-center my-5 py-5">
-        <div class="col text-left">
-          <h1 class="display-5 mx-5">Tiers</h1>
+
+      <!-- ######## -->
+      <!-- Features/Admin -->
+      <!-- ######## -->
+      <div class="row">
+        <div class="col text-center">
+          <h1 class="display-5">Finance Friendly</h1>
+        </div>
+      </div>
+      <div class="row align-items-top my-5 py-5">
+        <div class="col-md-4 col text-left">
+          <img src="/static/project-diagram-solid.png" height="64" class="my-5 mx-5"/>
+          <h3 class="display-5 mx-5">Project-based Workflow</h3>
+          <p class="lead mx-5">
+            <a href="http://docs.subku.be/concepts/project/" target="_blank">Projects</a> allow full developer freedom while keeping costs under control
+          </p>
+        </div>
+        <div class="col-md-4 col text-left">
+          <img src="/static/server-solid.png" height="64" class="my-5 mx-5"/>
+          <h3 class="display-5 mx-5">Tiers</h3>
           <p class="lead mx-5">
             Different Hardware for Different Workloads<br/>
             <i>Coming Soon</i>
           </p>
         </div>
-        <div class="col text-center">
-            <img src="/static/server-solid.png" height="128"/>
-        </div>
-      </div>
-
-      <div class="row align-items-center my-5 py-5">
-        <div class="col text-center">
-            <img src="/static/cogs-solid.png" height="128"/>
-        </div>
-        <div class="col text-right">
-          <h1 class="display-5 mx-5">Adjust Anytime</h1>
+        <div class="col-md-4 col text-left">
+          <img src="/static/cogs-solid.png" height="64" class="my-5 mx-5"/>
+          <h3 class="display-5 mx-5">Adjust Anytime</h3>
           <p class="lead mx-5">
-            No long term commitments
+            No long term commitments, adjust resources anytime
           </p>
         </div>
       </div>
 
-      <div class="row align-items-center my-5 py-5">
-        <div class="col text-left">
-          <h1 class="display-5 mx-5">Kubernetes API Access</h1>
+
+      <!-- ######## -->
+      <!-- Features/Developer -->
+      <!-- ######## -->
+      <div class="row">
+        <div class="col text-center">
+          <h1 class="display-5">Developer Friendly</h1>
+        </div>
+      </div>
+      <div class="row align-items-center my-5 pt-5">
+        <div class="col col-md-8 offset-md-2 text-left">
+            <pre class="text-light bg-dark py-3 px-3" style="line-height: 1.7;">
+> subctl login
+Your Subkube username: testuser
+Your Subkube password: ***************
+<span class="text-success">INFO:</span> Login Succesfull
+> subctl create project demo
+<span class="text-success">INFO:</span> Project 'demo' created
+> subctl set project demo --limit-cpu=500m --limit-memory=100Mi --limit-storage=10Gi
+<span class="text-success">INFO:</span> Project 'demo' resource limits updated
+> subctl create namespace demo-ns --project demo
+<span class="text-success">INFO:</span> Namespace 'demo-ns' created
+> subctl use project demo
+<span class="text-success">INFO:</span> Kubeconfig updated for project 'demo'
+> kubectl get pods -n demo
+NAME                  READY   STATUS    RESTARTS   AGE
+app-c585d6d7b-snf24   1/1     Running   0          3d19h
+db-77fb5d4c66-stbcv   1/1     Running   0          3d19h
+web-fdb66986c-6d27b   1/1     Running   3          3d19h
+> subctl set project demo --enable-nebula
+<span class="text-success">INFO:</span> Nebula not running, starting
+> subctl connect project demo
+<span class="text-success">INFO:</span> Nebula not running, starting
+<span class="text-success">INFO:</span> Nebula started
+<span class="text-success">INFO:</span> Configured Nebula for networks [192.168.72.0/24] from project 'demo'
+</pre>
+        </div>
+      </div>
+      <div class="row align-items-top my-5 pb-5">
+        <div class="col-md-4 col text-left">
+          <img src="/static/code-solid.png" height="64" class="my-5 mx-5"/>
+          <h3 class="display-5 mx-5">Kubernetes API Access</h3>
           <p class="lead mx-5">
             Direct Access to the Kubernetes API through <code>kubectl</code> or any other tool
           </p>
         </div>
-        <div class="col text-center">
-            <img src="/static/code-solid.png" height="128"/>
-        </div>
-      </div>
-
-      <div class="row align-items-center my-5 py-5">
-        <div class="col text-center">
-            <img src="/static/terminal-solid.png" height="128"/>
-        </div>
-        <div class="col text-right">
-          <h1 class="display-5 mx-5">CLI</h1>
+        <div class="col-md-4 col text-left">
+          <img src="/static/server-solid.png" height="64" class="my-5 mx-5"/>
+          <h3 class="display-5 mx-5">CLI</h3>
           <p class="lead mx-5">
             Use our command line tool <a href="http://docs.subku.be/cli/" target="_blank"><code>subctl</code></a> to manage your environment
           </p>
         </div>
+        <div class="col-md-4 col text-left">
+          <img src="/static/network-wired-solid.png" height="64" class="my-5 mx-5"/>
+          <h3 class="display-5 mx-5">Integrated VPN</h3>
+          <p class="lead mx-5">
+            Easily add a Site-to-Site or Site-to-User VPN, based on Nebula
+          </p>
+        </div>
       </div>
-    </section>
 
 
     <!-- ######## -->
@@ -204,7 +270,7 @@
         </div>
       </div>
       <div class="row my-5 card-deck">
-        <div class="col-md-4 offset-md-1 text-left">
+        <div class="col-6 text-left">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">
@@ -218,7 +284,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 offset-md-2 text-left">
+        <div class="col-6 text-left">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">
@@ -233,7 +299,7 @@
         </div>
       </div>
       <div class="row my-5 card-deck">
-        <div class="col-md-4 offset-md-1 text-left">
+        <div class="col-6 text-left">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">
@@ -247,7 +313,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 offset-md-2 text-left">
+        <div class="col-6 text-left">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">
@@ -404,6 +470,9 @@
           </p>
         </div> -->
         <div class="col text-center">
+          <p class="lead">
+            Regular
+          </p>
           <p class="text-muted">
             <small>more tiers coming soon</small>
           </p>
@@ -466,6 +535,39 @@
       </div>
     </section>
 
+
+    <div class="row bg-dark pt-3 pb-5 text-light">
+      <div class="col-md-3" style="font-weight: 200;">
+        <p class="lead">
+          <!-- <img src="/static/tesseract_thin.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="" loading="lazy"> -->
+          Subkube<br/>
+          <small style="font-weight: 200;">a Stud I/O product</small>
+        </p>
+      </div>
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-3">
+        <p>
+          <a href="#features" class="text-light" style="font-weight: 200;">Features</a>
+          <br/>
+          <a href="#use-cases" class="text-light" style="font-weight: 200;">Use Cases</a>
+          <br/>
+          <a href="#pricing" class="text-light" style="font-weight: 200;">Pricing</a>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <p>
+          <a href="#" class="text-light disabled" style="font-weight: 400;">Login</a>
+          <br/>
+          <a href="#" class="text-light disabled" style="font-weight: 200;">Sign up</a>
+        </p>
+        <p>
+          <a href="//docs.subku.be/" class="text-light" style="font-weight: 200;">Documentation</a>
+          <br/>
+          <a href="#pricing" class="text-light disabled" style="font-weight: 200;">Support</a>
+        </p>
+      </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
