@@ -143,22 +143,22 @@
             Highly Flexible Storage
           </h3>
           <p class="lead mx-5">
-            Integrated with Longhorn
+            Ceph-based storage using Rook
           </p>
           <p class="mx-5">
-            Define storage class properties using Longhorn annotations to specify the <strong>exact</strong> type of storage you need
+            Various storage classes are available to suit every application's storage needs.
           </p>
         </div>
         <div class="col-12 col-md-4 text-left">
           <img src="/static/ethernet-solid.png" height="64" class="my-5 mx-5"/>
           <h3 class="display-5 mx-5">
-             Full network flexibility
+            Simple but Powerful HTTP(S) Ingress
           </h3>
           <p class="lead mx-5">
-            Full control over Network Policies
+            Built on NGINX, using Let's Encrypt SSL certificates
           </p>
           <p class="mx-5">
-            By defining your own Network Security Policies, you can allow inter-namespace traffic, or deny inter-pod traffic, just as your needs require
+            Use our NGINX Ingress Controller to expose your services to the world, using a free domain name on us. You can easily use any domain you own as well, off course.
           </p>
         </div>
       </div>
@@ -253,12 +253,6 @@ NAME                  READY   STATUS    RESTARTS   AGE
 app-c585d6d7b-snf24   1/1     Running   0          3d19h
 db-77fb5d4c66-stbcv   1/1     Running   0          3d19h
 web-fdb66986c-6d27b   1/1     Running   3          3d19h
-> subctl set project demo --enable-nebula
-<span class="text-success">INFO:</span> Nebula not running, starting
-> subctl connect project demo
-<span class="text-success">INFO:</span> Nebula not running, starting
-<span class="text-success">INFO:</span> Nebula started
-<span class="text-success">INFO:</span> Configured Nebula for networks [192.168.72.0/24] from project 'demo'
 </pre>
         </div>
       </div>
@@ -279,9 +273,9 @@ web-fdb66986c-6d27b   1/1     Running   3          3d19h
         </div>
         <div class="col-12 col-md-4 text-left">
           <img src="/static/network-wired-solid.png" height="64" class="my-5 mx-5"/>
-          <h3 class="display-5 mx-5">Integrated VPN</h3>
+          <h3 class="display-5 mx-5">Web based interactive terminal</h3>
           <p class="lead mx-5">
-            Easily add a Site-to-Site or Site-to-User VPN, based on Nebula
+            Run <pre>kubectl</pre> commands and entire <pre>helm installs</pre> from our integrated in-browser shell environment
           </p>
         </div>
       </div>
